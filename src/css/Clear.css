@@ -1,0 +1,22 @@
+button {
+    background: #62c7ff;
+    border: none;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: "Lato", sans-serif;
+    padding: 15px 25px;
+    border-radius: 4px;
+    color: #fff;
+    justify-content: space-between;
+    margin-top: 35px;
+  }
+  
+  button.action {
+    color: #333;
+    background: none;
+    padding: 0;
+  }
+  
+  button.action:focus {
+    outline: none;
+  }

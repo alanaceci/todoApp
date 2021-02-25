@@ -1,12 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {
+  BrowserRouter as Router,
+  Link,
+  Switch,
+  Route
+} from 'react-router-dom';
 import './index.css';
-import App from './App';
+import App from './components/App'
+import Goodbye from "./components/Goodbye";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div>
+      <Router>
+        <header>
+            <nav>
+              <li> <Link to="/todo"> Home </Link></li>
+              <li><Link to="/goodbye"> Done for the day? </Link> </li>
+            </nav>
+        </header>
+          <Switch>
+            <Route path="/todo">
+                <App/>
+            </Route> 
+            <Route path="/goodbye">
+                <Goodbye/>
+            </Route>
+          </Switch>
+            
+  
+      </Router>
+    </div> 
   </React.StrictMode>,
   document.getElementById('root')
 );

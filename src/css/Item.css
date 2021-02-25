@@ -1,0 +1,27 @@
+.complete{
+    text-decoration: line-through;
+    color: grey;
+}
+
+.incomplete{
+    text-decoration: solid;
+    color: black;
+}
+
+.item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+  }
+  
+  ul {
+    font-weight: 200;
+    padding: 5px 0 5px 0;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Oxygen', sans-serif ;
+  }
+
+  
