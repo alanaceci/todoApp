@@ -17,7 +17,7 @@ ReactDOM.render(
       <Router>
         <header>
             <nav>
-              <li> <Link to="/todo"> Home </Link></li>
+              <li> <Link to="/todo"> Make a ToDo List </Link></li>
               <li><Link to="/goodbye"> Done for the day? </Link> </li>
             </nav>
         </header>
