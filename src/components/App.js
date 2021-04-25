@@ -33,11 +33,6 @@ const App = () => {
 
   return (
     <div className="wrapper">
-      <div className="header">
-        <Header />
-        <Time />
-      </div>
-
       <div className="list">
         <List toDoItems={toDoItems} handleToggle={handleToggle} />
         <AddItem addToDo={addToDo} />

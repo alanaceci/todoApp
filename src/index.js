@@ -7,7 +7,9 @@ import {
   Route
 } from 'react-router-dom';
 import './index.css';
-import App from './components/App'
+import App from './components/App';
+import Header from './components/Header';
+import Time from './components/Time';
 import Goodbye from "./components/Goodbye";
 import reportWebVitals from './reportWebVitals';
 
@@ -17,9 +19,13 @@ ReactDOM.render(
       <Router>
         <header>
             <nav>
-              <li> <Link to="/todo"> Make a ToDo List </Link></li>
+              <li> <Link to="/todo"> Make a To-Do List </Link></li>
               <li><Link to="/goodbye"> Done for the day? </Link> </li>
             </nav>
+            <div className="header">
+              <Header />
+              <Time />
+            </div>
         </header>
           <Switch>
             <Route path="/todo">
@@ -29,8 +35,6 @@ ReactDOM.render(
                 <Goodbye/>
             </Route>
           </Switch>
-            
-  
       </Router>
     </div> 
   </React.StrictMode>,
